@@ -4,7 +4,7 @@ metadata:
   name: pal-tracker
 spec:
   rules:
-    - host: development.trumans.k8s.pal.pivotal.io
+    - host: review.trumans.k8s.pal.pivotal.io
       http:
         paths:
           - path: /
