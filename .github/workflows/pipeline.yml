@@ -39,6 +39,6 @@ jobs:
       - run: curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.15.10/bin/linux/amd64/kubectl
       - run: chmod +x ./kubectl
       - uses: actions/checkout@v1
-      - run: grep "github.run_number" k8s/environments/review/deployment.yaml
-      - run: sed -i 's/github.run_number/${{github.run_number}}/g' k8s/environments/review/deployment.yaml
+      - run: grep "github.run_number" k8s/environments/review/deployment.yml
+      - run: sed -i 's/github.run_number/${{github.run_number}}/g' k8s/environments/review/deployment.yml
       - run: kubectl apply -k k8s/environments/review
