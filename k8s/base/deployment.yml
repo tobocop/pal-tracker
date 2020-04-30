@@ -38,6 +38,16 @@ spec:
                 configMapKeyRef:
                   name: pal-tracker
                   key: welcome.message
+            - name: MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
+              valueFrom:
+                configMapKeyRef:
+                  name: pal-tracker
+                  key: management.endpoints.web.exposure.include
+            - name: MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS
+              valueFrom:
+                configMapKeyRef:
+                  name: pal-tracker
+                  key: management.endpoint.health.showdetails
             - name: SPRING_DATASOURCE_HIKARI_MAXIMUMPOOLSIZE
               valueFrom:
                 configMapKeyRef:
