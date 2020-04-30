@@ -3,5 +3,6 @@ bases:
 patchesStrategicMerge:
   - configmap.yml
   - ingress.yml
+  - deployment.yml
 namespace: development
 nameSuffix: -development
